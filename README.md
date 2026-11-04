@@ -23,3 +23,10 @@
 ## 编译
 
 VSCode 安装 Keil Assistant 插件，设置 `KeilAssistant.MDK.Uv4Path` 为 `C:\Keil_v5\UV4\UV4.exe`，在 KEIL UVISION PROJECT 视图中打开 `MDK-ARM/Environment_Sensor.uvprojx`，点击 Build 即可生成 hex 文件。
+
+## 版本记录
+
+| 版本 | 说明 |
+| --- | --- |
+| v1.0.0 | 导入课程案例工程，传感器采集、OLED 显示、巴法云上报 |
+| v1.1.0 | 串口启动信息打印固件版本号；OLED 开机画面显示版本号（feature/oled-version 分支合并） |
