@@ -39,6 +39,7 @@
 /* USER CODE BEGIN PD */
 #define BEMFA_UPLOAD_PERIOD_MS   10000U
 #define BEMFA_RETRY_PERIOD_MS    60000U
+#define FW_VERSION               "v1.1.0"   /* 固件版本号，每次发布递增 */
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -113,6 +114,7 @@ int main(void)
   printf("\r\n");
   printf("========================================\r\n");
   printf(" Environment Sensor System\r\n");
+  printf(" Firmware: %s (build %s %s)\r\n", FW_VERSION, __DATE__, __TIME__);
   printf(" DHT11:  PG11\r\n");
   printf(" BH1750: PB6(SCL), PB7(SDA), software IIC\r\n");
   printf(" MQ135:  PA1 / ADC1_IN1\r\n");
