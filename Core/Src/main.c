@@ -125,7 +125,7 @@ int main(void)
 
   OLED8080_Init();
   OLED8080_ShowString(0, 0, "Env Sensor");
-  OLED8080_ShowString(0, 2, "OLED Ready");
+  OLED8080_ShowString(0, 2, "FW " FW_VERSION);   /* 开机画面显示固件版本号 */
 
   /*
    * 通过统一接口初始化所有传感器模块。
